@@ -1,7 +1,7 @@
 function move(elm) {
     elm.style.possiton = 'absolute'
-    elm.style.top = Math.floor(Math.random() * 90 + 5) + '%'
-    elm.style.left = Math.floor(Math.random()* 90 + 5 ) + '%'
+    elm.style.top = Math.floor(Math.random() * 30 + 5) + '%'
+    elm.style.left = Math.floor(Math.random()* 30 + 5 ) + '%'
 }
 
 var btn = document.querySelector('#no');
