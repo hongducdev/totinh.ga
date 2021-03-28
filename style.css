@@ -53,6 +53,6 @@ button:hover {
 
 #no {
     position: absolute;
-    margin: auto;    
+    margin: 24opx;    
     background-color: #9fd8df;
 }
