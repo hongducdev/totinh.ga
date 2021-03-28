@@ -11,6 +11,6 @@ btn.addEventListener('mouseover', function(e) {
 
 var btn = document.querySelector('#yes');
 btn.addEventListener('click', function() {
-    alert("Yes babe ❤, you too")
+    alert("Yes babe ❤, you too!")
 })
 
