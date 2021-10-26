@@ -33,15 +33,15 @@ btn.addEventListener('click', function() {
 modalClose.addEventListener('click', closeForm);
 modalClose.addEventListener('click', function() {
     var audio = document.getElementById("music");
-    audio.muted();
+    audio.load();
 })
 modal.addEventListener('click', closeForm);
 modal.addEventListener('click', function() {
     var audio = document.getElementById("music");
-    audio.muted();
+    audio.load();
 })
 modalContainer.addEventListener('click', function(event) {
     event.stopPropagation();
     var audio = document.getElementById("music");
-    audio.muted();
+    audio.load();
 })
