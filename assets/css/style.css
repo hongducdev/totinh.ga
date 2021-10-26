@@ -152,8 +152,10 @@ button:hover {
 @media only screen and (max-width: 46.1875em) {
 
     .yeuanh {
+        font-size: 40px;
         top: 15%;
     }
+    
     #yes {
         top: 50%;
         left: 25%;
