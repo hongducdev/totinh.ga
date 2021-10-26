@@ -4,8 +4,8 @@ const modalContainer = document.querySelector ('.js-modal-container')
 
 function move(elm) {
     elm.style.possiton = 'absolute'
-    elm.style.top = Math.floor(Math.random() * 20 + 10) + '%'
-    elm.style.right = Math.floor(Math.random()* 20 + 10 ) + '%'
+    elm.style.top = Math.floor(Math.random() * 50) + '%'
+    elm.style.right = Math.floor(Math.random()* 50 ) + '%'
 }
 
 function showForm() {
@@ -16,8 +16,24 @@ function closeForm() {
     modal.classList.remove('open')
 }
 
+function switchButton() {
+    var leftNo = $('#no').css("left");
+    var topNO = $('#no').css("top");
+    var leftY = $('#yes').css("left");
+    var topY = $('#yes').css("top");
+    $('#no').css("left", leftY);
+    $('#no').css("top", topY);
+    $('#yes').css("left", leftNo);
+    $('#yes').css("top", topNO);
+}
+
 var btn = document.querySelector('#no');
 btn.addEventListener('mouseover', function(e) { 
+    move(e.target)
+})
+
+var btn = document.querySelector('#no');
+btn.addEventListener('click', function(e) { 
     move(e.target)
 })
 
@@ -43,5 +59,5 @@ modal.addEventListener('click', function() {
 modalContainer.addEventListener('click', function(event) {
     event.stopPropagation();
     var audio = document.getElementById("music");
-    audio.load();
+    audio.muted();
 })
