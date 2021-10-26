@@ -59,5 +59,5 @@ modal.addEventListener('click', function() {
 modalContainer.addEventListener('click', function(event) {
     event.stopPropagation();
     var audio = document.getElementById("music");
-    audio.muted();
+    audio.load();
 })
