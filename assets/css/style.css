@@ -152,17 +152,17 @@ button:hover {
 @media only screen and (max-width: 46.1875em) {
 
     .yeuanh {
-        font-size: 40px;
-        top: 15%;
+        font-size: 35px;
+        top: 13%;
     }
     #yes {
-        top: 60%;
+        top: 50%;
         left: 25%;
     }
 
     #no {
-        top: 70%;
-        right: 32%;
+        top: 65%;
+        right: 25%;
     }
 
     .modal-close {
